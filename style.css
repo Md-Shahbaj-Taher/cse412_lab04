@@ -1,0 +1,99 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url('bg.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the image fixed when scrolling */
+    
+}
+#control-panel {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(32, 106, 184, 0.504); /* Blue with 70% opacity */
+    text-align: center;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#size-form {
+    display: inline-block;
+}
+
+#size-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#size-form select {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+#size-form button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white; /* Initial background color */
+    color: #175598ae; /* Blue text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth color transition */
+}
+
+#size-form button:hover {
+    background-color: #e0f3ff; /* Light blue background on hover */
+    color: #084586; /* Darker blue text on hover */
+}
+
+
+/* Puzzle container styles */
+#puzzle-container {
+    display: grid;
+    gap: 5px;
+    width: 600px;
+    height: 600px;
+    background-color: #946d6d52;
+    border: 5px solid #333;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+/* Tile styles */
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #5bc2f2b2;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+/* Empty tile styles */
+.tile.empty {
+    background-color: #ddd;
+    box-shadow: none;
+    cursor: default;
+}
+
+/* Hover effect for tiles */
+.tile:not(.empty):hover {
+    background-color:#159fc2b7;;
+    transform: scale(1.05);
+}

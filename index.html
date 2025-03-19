@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Squared Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="control-panel">
+        <form id="size-form">
+            <label for="size-selector">Choose Puzzle Size:</label>
+            <select id="size-selector">
+                <option value="3">3 x 3</option>
+                <option value="4" selected>4 x 4</option>
+                <option value="5">5 x 5</option>
+                <option value="6">6 x 6</option>
+            </select>
+            <button type="button" id="apply-size">Choose</button>
+        </form>
+    </div>
+    <div id="puzzle-container"></div>
+    <script src="puzzle.js"></script>
+</body>
+</html>
